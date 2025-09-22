@@ -1,0 +1,107 @@
+*{
+    background-color: #EFEFEF;
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    
+    background-color: white;
+    display: grid;
+    width: 100%;
+   grid-template-columns: repeat(12,1fr);
+    grid-template-columns: 8fr repeat(4,4fr) 2fr 3fr 5fr repeat(3,1fr); 
+    justify-content: start;
+    align-items: stretch;
+  top: 0;
+  padding-bottom: 20px;
+    gap: 0px;
+}
+.tv{
+
+    background-color: transparent;
+    margin-left: 0px;
+    margin-top: 20px;
+    font-family: Gotham, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+    color: black;
+}
+.icon{
+    margin-left: 0;
+    margin-right: 0;
+}
+nav a{
+    text-decoration: none;
+    background-color: transparent;
+}
+nav img{
+    padding-left: 30px;
+}
+nav a:hover{
+    text-decoration: underline;
+    color: red;
+}
+nav a svg{
+    background-color: transparent;
+}
+.box{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+max-width: 160px;
+white-space: nowrap;
+    min-width: 90px;
+    z-index: 1000;
+    display: none;
+    border: 1px solid rgb(155, 155, 155);
+    box-sizing: border-box;
+    
+}
+.heading:hover   .box{
+    display: block;
+}
+.box ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+   
+}
+.box ul li{
+    margin-top: 0px;
+    background-color: white;
+    list-style: none;
+    
+}
+.box ul li a{
+    color: black;
+    font-family: Gotham, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19px;
+   
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    display: block;
+}
+.box ul li a:hover{
+    color: white;
+    text-decoration: underline;
+    background-color: red;
+    font-family: Gotham, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19px;
+
+}
+.heading{
+    position: relative;
+    display: inline-block;
+}
